@@ -93,18 +93,22 @@ Even a heavily tagged border repeater stays well within budget:
 
 ### MWMesh (Utah)
 
+`imw <state code> <state region> <iata or meshmapper region>`
+
 ```
 *
-└── us
-    └── ut
-        ├── wasatch
-        │   ├── slc
-        │   ├── ut-county
-        │   └── davis-weber
-        ├── northern-ut
-        ├── central-ut
-        ├── eastern-ut
-        └── southern-ut
+imw (Intermountain West)
+└── ut (Utah)
+    ├── wf (Wasatch Front)
+    │   ├── ogd (Ogden, Layton, Bountiful, Plain City)
+    │   ├── slc (Salt Lake Valley)
+    │   └── utc (Sandy, Lehi, Provo, Santaquin)
+    ├── wb (Wasatch Back [Park City, Heber, Vernal])
+    ├── n-ut (Brigham City, Logan, Tremonton)
+    ├── c-ut (Nephi, Moab, Beaver, Richfield)
+    └── s-ut (Southern Utah)
+          ├── ced (Cedar City)
+          └── stg (St. George)
 ```
 
 ### Nebraska Mesh

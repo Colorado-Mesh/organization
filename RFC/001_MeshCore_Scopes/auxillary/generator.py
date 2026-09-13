@@ -10,9 +10,8 @@ from colorado import (
     Counties,
 )
 
-# TODO: Add geographic regions to colorado_python library
 GEOGRAPHIC_AREAS = {
-    "Western Slopes": "ws",
+    "Western Slope": "ws",
     "Front Range": "fr",
     "Eastern Plains": "ep",
     "Central Mountains": "cm",
