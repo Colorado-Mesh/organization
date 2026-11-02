@@ -54,7 +54,7 @@ Colorado Mesh recommends a hierarchical layout plan for scopes for the MeshCore 
 - Easy-to-read ordering: Each scope is a subset of another higher-level scope. `co-XX` (two characters) signifies a geographic scope, while `co-xxx` (three characters) signifies an IATA-based scope.
 - Scalable: Additional scopes can be added at any level, or a given scope can be subdivided into further sub-scopes as needed.
 - Rooted in existing systems: The two primary scope categories for Colorado are existing airport regions (IATA codes) and colloquial geographic zones recognized by state agencies.
-- Supportive to emergency services: Each repeater would have the primary and eight immediately-neighboring U.S. National Grid codes as scopes, supporting a standard used by emergency services such as FEMA and search-and-rescue.
+- Supportive to emergency services: Each repeater would have the primary U.S. National Grid code as a scope, supporting a standard used by emergency services such as FEMA and search-and-rescue.
 - Familiar and compatible: The 16 IATA codes in Colorado have already been firmly established on the Colorado Mesh MeshCore network, including in its recommended naming scheme, and is already associated with repeater names and MeshMapper wardriving.
 - High-level: Colorado Mesh does not want to overcomplicate the scopes, and instead recommends scopes that are likely to be used. The system does, however, allow for network users to introduce their own scopes and sub-scopes as they see fit (e.g. local-level)
 - Non-interfering: The recommended scopes and associated zones are specific, yet broad enough to successfully limit unnecessary long-distance (cross-state or interstate) traffic without negatively impacting local area traffic.
@@ -76,24 +76,10 @@ Repeaters on the Colorado/Nebraska border (in the `STK` IATA region) should carr
 
 It is anticipated this same courtesy may be extended to other bordering states (Wyoming, Kansas, New Mexico) if applicable in the future.
 
-### U.S. National Grid Scope
+### U.S. National Grid / Military Grid Reference System (MGRS) Scope 
 
 Each repeater, based on its latitude/longitude, belongs to one of the 100 square kilometer (~62 square mile) grid squares as defined by the U.S. National Grid system, represented by a five-character code (e.g. `13SDD` reaches from downtown Denver in the northeast to Buena Vista in the southwest).
 
-Each repeater should carry not only the five-character code of the grid square containing it, but also its immediate eight neighbors (forming a perimeter around its containing grid square).
-
-For example, a repeater in Bailey (zone `13SDD`) would carry the following scopes:
-  - `13SDD` (primary)
-    (clockwise from due north)
-  - `13SDE` 
-  - `13SEE`
-  - `13SED`
-  - `13SEC`
-  - `13SDC`
-  - `13SCC`
-  - `13SCD`
-  - `13SCE`
-
-This allows for overlap between zone borders, allowing messages to hope into adjacent grid squares. A message sent with any U.S. National Grid system scope could therefore reach a 300 square kilometer (~186 square mile) area.
+In the United States, the Military Grid Reference System (NATO) and the U.S. National Grid are aligned, meaning the scope would match for both coordinate systems.
 
 Refer to https://mmdolbow.github.io/usng-gmap-v3/ for a visualization of every code at the 100-square-kilometer level.
